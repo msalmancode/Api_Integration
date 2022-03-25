@@ -61,9 +61,6 @@ class ApiCall {
   dialogShow() {}
 
   internetDialog(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (ctx) => NoInternetDialog(),
-    );
+    showDialog(context: context, builder: (ctx) => NoInternetDialog());
   }
 }

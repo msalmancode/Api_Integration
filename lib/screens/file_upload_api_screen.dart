@@ -117,7 +117,6 @@ class _FileUploadApiScreenState extends State<FileUploadApiScreen> {
   }
 
   selectFile() async {
-    // debugger();
     try {
       //png, jpeg, jpg, docx, pdf,
       final allowExtension = ['png', 'jpeg', 'jpg', 'pdf', 'docx'];
@@ -163,8 +162,8 @@ class _FileUploadApiScreenState extends State<FileUploadApiScreen> {
       String base64 = getBase64FormatFile(file!);
       if (base64 != '') {
         showDialog(context: context, builder: (ctx) => SuccessDialog());
+        file = null;
       }
-      file = null;
       setState(() {});
     }
   }

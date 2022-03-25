@@ -11,7 +11,7 @@ class LargeFileDialog extends StatelessWidget {
           Icon(
             Icons.error_outline,
             size: 30,
-            color: Colors.yellow.withOpacity(.8),
+            color: Colors.yellow,
           ),
           SizedBox(
             height: 20,
